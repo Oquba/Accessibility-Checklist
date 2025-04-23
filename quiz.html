@@ -1,55 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mobile Accessibility Checklist</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="quiz.html">Quiz</a></li>
-        <li><a href="resources.html">Resources</a></li>
-      </ul>
-    </nav>
-    <h1>Mobile Accessibility Checklist</h1>
-  </header>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mobile Accessibility Checklist</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
   
-  <section class="intro">
-    <p>
-      Mobile accessibility is crucial in today's digital world, where more users access the web from smartphones and tablets than ever before. Ensuring that your website is navigable, readable, and operable on all devices means opening your content to everyone — including users with disabilities. By following accessibility best practices, developers can make mobile experiences inclusive, efficient, and legally compliant.
-    </p>
-  </section>
-  
-  <main>
-    <section>
-    <p> Here is a checklist to consider when creating your own mobile applications! </p>
-      </section>
-    <section>
-      <h2>Text</h2>
-      <ul>
-        <li><input type="checkbox" id="altText"><label for="altText"> All images have alt text</label></li>
-        <li><input type="checkbox" id="semantic"><label for="semantic"> Semantic HTML elements are used</label></li>
-      </ul>
-    </section>
-    <section>
-      <h2>Color</h2>
-      <ul>
-        <li><input type="checkbox" id="contrast"><label for="contrast"> Sufficient color contrast</label></li>
-        <li><input type="checkbox" id="colorBlind"><label for="colorBlind"> Color is not the only means of conveying info</label></li>
-      </ul>
-    </section>
-    <section>
-      <h2>Navigation</h2>
-      <ul>
-        <li><input type="checkbox" id="keyboard"><label for="keyboard"> All functionality is keyboard accessible</label></li>
-        <li><input type="checkbox" id="focus"><label for="focus"> Focus styles are visible</label></li>
-      </ul>
-    </section>
-  </main>
-  <script src="script.js"></script>
-</body>
+    <div id="home-page">
+        <h1>Mobile Accessibility Checklist</h1>
+        <button class="start-quiz">Begin Checklist</a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="quiz">
+        <div id="question-number">
+            <div id="progress">Question:1/_</div>
+        </div>
+        <div id="question-view">
+
+        </div>
+        <div class="question">
+            <h1>Question</h1>
+        </div>
+
+        <div class="choice">
+            <div class="options"><input type="radio" name="options" value="option1" id="opt0"><label for="opt0" id="lb0">Option 1</label></div>
+            <div class="options"><input type="radio" name="options" value="option2" id="opt1"><label for="opt1" id="lb1">Option 2</label></div>
+        </div>
+
+        <br>
+
+        <div class="next-btn">
+            <button type="button" class="go-next">Next</button>
+            <button type="button" class="view-results">View results</button>
+        </div>
+
+        <br>
+
+        <div class="results">
+          <h1>Results:</h1>
+          <div class="results-score">Score:0</div>
+          <div class="yes-count">Placeholder count</div>
+          <div class="remark">Placeholder remark</div>
+          <br>
+
+          <button type="button" id="restart">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
