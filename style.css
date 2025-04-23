@@ -72,3 +72,20 @@ li {
   margin: 10px 0;
 }
 
+.resource-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.resource-list li {
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-left: 4px solid #000;
+  border-radius: 6px;
+}
+
+.resource-list a {
+  color: #000;
+  text-decoration: underline;
+}
