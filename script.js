@@ -12,53 +12,63 @@ let yn = ["Yes", "No"];
 let questions = [
     {
         id: 1,
-        question: "Test question 1",
-        category: "Testing"
+        question: "Is the text size scalable through device settings?",
+        category: "Text and Typography"
     },
     {
         id: 2,
-        question: "Question 2",
-        category: "Testing"
+        question: "Do all text elements meet a minimum contrast ratio of 4.5:1 against their background?",
+        category: "Text and Typography"
     },
     {
         id: 3,
-        question: "Question 3",
-        category: "Testing"
+        question: "Is there sufficient spacing between lines and paragraphs to improve readability?",
+        category: "Text and Typography"
     },    
     {
         id: 4,
-        question: "Question 4",
-        category: "Testing"
+        question: "Are all fonts legible and not overly decorative?",
+        category: "Text and Typography"
     },    
     {
         id: 5,
-        question: "Question 5",
-        category: "Testing"
+        question: "Are all touch targets (buttons, links, etc) at least 44x44 dp in size?",
+        category: "Touch Targets and Navgation"
     },    
     {
         id: 6,
-        question: "Question 6",
-        category: "Testing"
+        question: "Can users navigate the app using only one hand?",
+        category: "Touch Targets and Navgation"
     },
     {
         id: 7,
-        question: "Question 7",
-        category: "Testing"
+        question: "Are tappable elements placed far enough apart to avoid accidental taps?",
+        category: "Touch Targets and Navgation"
     },
     {
         id: 8,
-        question: "Question 8",
-        category: "Testing"
+        question: "Can the app be navigated using only external keyboard or switch access?",
+        category: "Touch Targets and Navgation"
     },
     {
         id: 9,
-        question: "Question 9",
-        category: "Testing"
+        question: "Is color never the only means used to convey information?",
+        category: "Color and Visual Indicators"
     },
     {
         id: 10,
-        question: "Question 10",
-        category: "Testing"
+        question: "Are error states (e.g. invalid inputs) communicated with both color and text/icons?",
+        category: "Color and Visual Indicators"
+    },
+    {
+        id: 11,
+        question: "Is there an option to enable high-contrast mode or dark mode?",
+        category: "Color and Visual Indicators"
+    },
+    {
+        id: 12,
+        question: "Are animations or flashing elements disabled or limited to prevent seizures?",
+        category: "Color and Visual Indicators"
     },
 ];
 
