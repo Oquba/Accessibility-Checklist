@@ -1,0 +1,29 @@
+.suggestion-tab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .popup {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  

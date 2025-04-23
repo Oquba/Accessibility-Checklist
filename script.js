@@ -11,44 +11,54 @@ let yn = ["Yes", "No"];
 // Array for questions, containing the quesiton itself as well as the the choice
 let questions = [
     {
+        id: 1,
         question: "Test question 1",
-        choices: yn
+        category: "Testing"
     },
     {
+        id: 2,
         question: "Question 2",
-        choices: yn
+        category: "Testing"
     },
     {
+        id: 3,
         question: "Question 3",
-        choices: yn
+        category: "Testing"
     },    
     {
+        id: 4,
         question: "Question 4",
-        choices: yn
+        category: "Testing"
     },    
     {
+        id: 5,
         question: "Question 5",
-        choices: yn
+        category: "Testing"
     },    
     {
+        id: 6,
         question: "Question 6",
-        choices: yn
+        category: "Testing"
     },
     {
+        id: 7,
         question: "Question 7",
-        choices: yn
+        category: "Testing"
     },
     {
+        id: 8,
         question: "Question 8",
-        choices: yn
+        category: "Testing"
     },
     {
+        id: 9,
         question: "Question 9",
-        choices: yn
+        category: "Testing"
     },
     {
+        id: 10,
         question: "Question 10",
-        choices: yn
+        category: "Testing"
     },
 ];
 
@@ -56,8 +66,6 @@ let questions = [
 let responses = [];
 
 document.querySelector(".start-quiz").addEventListener("click", function() {
-    qCount = 0;
-    responses = [];
     document.querySelector(".view-results").style.display="none";
     document.getElementById("progress").textContent = "Question : " + (qCount+1) + "/" + questions.length;
 
@@ -139,3 +147,9 @@ document.querySelector(".view-results").addEventListener("click", function() {
 document.getElementById("restart").addEventListener("click", function() {
     location.reload();
 });
+
+function togglePopup() {
+    const popup = document.getElementById("popup");
+    popup.classList.toggle("hidden");
+  }
+  
