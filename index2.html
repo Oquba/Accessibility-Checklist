@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mobile Accessibility Checklist</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="suggestion-tab" onclick="togglePopup()">
+      💡 Suggestion
+    </div>
+    
+    <div id="popup" class="popup hidden">
+      <p>This is a helpful suggestion to guide your user.</p>
+    </div>
+    
+    <div id="home-page">
+        <h1>Mobile Accessibility Checklist</h1>
+        <button class="start-quiz">Begin Checklist</a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="quiz">
+        <div id="question-number">
+            <div id="progress">Question:1/_</div>
+        </div>
+        <div id="question-view">
+
+        </div>
+        <div class="question">
+            <h1>Question</h1>
+        </div>
+
+        <div class="choice">
+            <div class="options"><input type="radio" name="options" value="option1" id="opt0"><label for="opt0" id="lb0">Option 1</label></div>
+            <div class="options"><input type="radio" name="options" value="option2" id="opt1"><label for="opt1" id="lb1">Option 2</label></div>
+        </div>
+
+        <br>
+
+        <div class="next-btn">
+            <button type="button" class="go-next">Next</button>
+            <button type="button" class="view-results">View results</button>
+        </div>
+
+        <br>
+
+        <div class="results">
+          <h1>Results:</h1>
+          <div class="results-score">Score:0</div>
+          <div class="yes-count">Placeholder count</div>
+          <div class="remark">Placeholder remark</div>
+          <br>
+
+          <button type="button" id="restart">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
