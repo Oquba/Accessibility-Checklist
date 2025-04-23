@@ -75,9 +75,13 @@ let questions = [
 // Array to hold the responses given
 let responses = [];
 
+
 document.querySelector(".start-quiz").addEventListener("click", function() {
+    responses = [];
+    qCount = 0;
     document.querySelector(".view-results").style.display="none";
     document.getElementById("progress").textContent = "Question : " + (qCount+1) + "/" + questions.length;
+
 
     document.querySelector(".question").innerHTML = "<h1>" + questions[qCount].question + "</h1>";
     for (i = 0; i < 2; i++) {

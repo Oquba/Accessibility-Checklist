@@ -19,21 +19,22 @@
     </header>
     <br>
     <br>
-    <div id="home-page">
-        <button class="start-quiz" style="justify-content: center;">Begin Checklist</a>
+    <div id="quiz-page" class="intro">
+      <p>This quick yes/no quiz is designed to help you evaluate how accessible your mobile app is for all users, including those with disabilities. By answering these questions, you'll gain insights into areas where your app excels and where it might need improvement. Let's make technology inclusive—one feature at a time!</p>
+        <button class="start-quiz">Begin Checklist</a>
     </div>
     <br>
     <br>
     <br>
-    <div class="quiz">
+    <section class="quiz intro">
         <div id="question-number">
-            <div id="progress">Question:1/_</div>
+            <div id="progress">Question:0/12</div>
         </div>
         <div id="question-view">
 
         </div>
         <div class="question">
-            <h1>Question</h1>
+            <h1>Press begin checklist</h1>
         </div>
 
         <div class="choice">
@@ -49,17 +50,16 @@
         </div>
 
         <br>
+    </section>
+    <section class="results intro">
+      <h1>Results:</h1>
+      <div class="results-score">Score:0</div>
+      <div class="yes-count">Placeholder count</div>
+      <div class="remark">Placeholder remark</div>
+      <br>
 
-        <div class="results">
-          <h1>Results:</h1>
-          <div class="results-score">Score:0</div>
-          <div class="yes-count">Placeholder count</div>
-          <div class="remark">Placeholder remark</div>
-          <br>
-
-          <button type="button" id="restart">Restart Quiz</button>
-        </div>
-    </div>
+      <button type="button" id="restart">Restart Quiz</button>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
